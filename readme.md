@@ -32,6 +32,8 @@ From the the script, test_10 seems to be a bug when passenger.phone_number is no
 1. BUG: Record is saved even though mandatory key is not provided (phone_number).
 2. STEP TO REPRODUCE: Dont include key and params for phone number in json body
 3. OUTCOME: record_id is generated eventhough record is not stored. GET record API failed to generate response:
+         
+         
          {
          "name": "ApiError",
          "code": "INTERNAL_SERVER_ERROR"
