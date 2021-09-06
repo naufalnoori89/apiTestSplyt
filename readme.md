@@ -24,3 +24,15 @@ This script is tested using Python 3.8 and above.
 5. The test results are recorded in ./log directory. The test logs are generated based on the time the test was run.
 
 Any issue please feel free to contact naufalnoori@gmail.com
+
+## OUTPUT RESULT
+
+From the the script, test_10 seems to be a bug when passenger.phone_number is not listed in bod json.
+
+BUG: Record is saved even though mandatory key is not provided (phone_number).
+STEP TO REPRODUCE: Dont include key and params for phone number in json body
+OUTCOME: record_id is generated eventhough record is not stored. GET record API failed to generate response:
+{
+"name": "ApiError",
+"code": "INTERNAL_SERVER_ERROR"
+}
