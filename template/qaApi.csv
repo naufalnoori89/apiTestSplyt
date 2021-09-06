@@ -1,0 +1,12 @@
+testId,testName,testDescription,pickup,latitude,longitude,passenger,name,surname,phone_number,departure_date
+1,test_1,all fields populated,Y,51.5,-1,Y,user_1,surname_1,123456789,2021-01-01T00:00:00.000Z
+2,test_2,longitude missing,Y,51.5,,Y,user_2,surname_2,123456790,2021-01-01T00:00:00.000Z
+3,test_3,latitide missing,Y,,-1,Y,user_3,surname_3,123456791,2021-01-01T00:00:00.000Z
+4,test_4,pickup missing,N,,,Y,user_4,surname_4,123456792,2021-01-01T00:00:00.000Z
+5,test_5,passanger name missing,Y,51.5,-1,Y,,surname_5,123456793,2021-01-01T00:00:00.000Z
+6,test_6,passenager surname missing,Y,51.5,-1,Y,user_6,,123456794,2021-01-01T00:00:00.000Z
+7,test_7,phone number missing,Y,51.5,-1,Y,user_7,surname_7,,2021-01-01T00:00:00.000Z
+8,test_8,passenger missing,Y,51.5,-1,Y,,,,2021-01-01T00:00:00.000Z
+9,test_9,departure date missing,Y,51.5,-1,Y,user_9,surname_9,123456797,
+10,test_10,missing  key and param phone number in json body request,Y,51.5,-1,N,user_1,surname_1,,2021-01-01T00:00:00.000Z
+11,test_11,duplicate user,Y,51.5,-1,Y,user_2,surname_2,123456790,2021-01-01T00:00:00.000Z

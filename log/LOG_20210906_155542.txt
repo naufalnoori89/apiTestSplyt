@@ -1,0 +1,44 @@
+Mon 06-Sep-2021 15:55:43 INFO 200 Data Succesfully Recorded, test_1, all fields populated
+Mon 06-Sep-2021 15:55:43 INFO Get Record:
+ {
+    "_id": "6135c97ed54b503d56fd60d7",
+    "pickup": {
+        "latitude": 51.5,
+        "longitude": -1
+    },
+    "departure_date": "2021-01-01T00:00:00.000Z",
+    "passenger": {
+        "name": "user_1",
+        "surname": "surname_1",
+        "phone_number": "123456789"
+    }
+}
+Mon 06-Sep-2021 15:55:44 INFO 400 No Data Recorded, test_2, longitude missing, ===>, request failed body validation, [{'message': '"longitude" must be a number', 'path': ['pickup', 'longitude'], 'type': 'number.base', 'context': {'value': '', 'key': 'longitude', 'label': 'longitude'}}]
+Mon 06-Sep-2021 15:55:44 INFO 400 No Data Recorded, test_3, latitide missing, ===>, request failed body validation, [{'message': '"latitude" must be a number', 'path': ['pickup', 'latitude'], 'type': 'number.base', 'context': {'value': '', 'key': 'latitude', 'label': 'latitude'}}]
+Mon 06-Sep-2021 15:55:45 INFO 400 No Data Recorded, test_4, pickup missing, ===>, request failed body validation, [{'message': '"latitude" must be a number', 'path': ['pickup', 'latitude'], 'type': 'number.base', 'context': {'value': '', 'key': 'latitude', 'label': 'latitude'}}, {'message': '"longitude" must be a number', 'path': ['pickup', 'longitude'], 'type': 'number.base', 'context': {'value': '', 'key': 'longitude', 'label': 'longitude'}}]
+Mon 06-Sep-2021 15:55:45 INFO 400 No Data Recorded, test_5, passanger name missing, ===>, request failed body validation, [{'message': '"name" is not allowed to be empty', 'path': ['passenger', 'name'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'name', 'label': 'name'}}]
+Mon 06-Sep-2021 15:55:46 INFO 400 No Data Recorded, test_6, passenager surname missing, ===>, request failed body validation, [{'message': '"surname" is not allowed to be empty', 'path': ['passenger', 'surname'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'surname', 'label': 'surname'}}]
+Mon 06-Sep-2021 15:55:46 INFO 400 No Data Recorded, test_7, phone number missing, ===>, request failed body validation, [{'message': '"phone_number" is not allowed to be empty', 'path': ['passenger', 'phone_number'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'phone_number', 'label': 'phone_number'}}]
+Mon 06-Sep-2021 15:55:47 INFO 400 No Data Recorded, test_8, passenger missing, ===>, request failed body validation, [{'message': '"name" is not allowed to be empty', 'path': ['passenger', 'name'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'name', 'label': 'name'}}, {'message': '"surname" is not allowed to be empty', 'path': ['passenger', 'surname'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'surname', 'label': 'surname'}}, {'message': '"phone_number" is not allowed to be empty', 'path': ['passenger', 'phone_number'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'phone_number', 'label': 'phone_number'}}]
+Mon 06-Sep-2021 15:55:48 INFO 400 No Data Recorded, test_9, departure date missing, ===>, request failed body validation, [{'message': '"departure_date" is not allowed to be empty', 'path': ['departure_date'], 'type': 'any.empty', 'context': {'value': '', 'invalids': [''], 'key': 'departure_date', 'label': 'departure_date'}}, {'message': '"departure_date" with value "" fails to match the required pattern: /\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}/', 'path': ['departure_date'], 'type': 'string.regex.base', 'context': {'pattern': {}, 'value': '', 'key': 'departure_date', 'label': 'departure_date'}}]
+Mon 06-Sep-2021 15:55:49 INFO 500 Data Succesfully Recorded, test_10, missing  key and param phone number in json body request
+Mon 06-Sep-2021 15:55:49 INFO Get Record:
+ {
+    "name": "ApiError",
+    "code": "INTERNAL_SERVER_ERROR"
+}
+Mon 06-Sep-2021 15:55:50 INFO 200 Data Succesfully Recorded, test_11, duplicate user
+Mon 06-Sep-2021 15:55:50 INFO Get Record:
+ {
+    "_id": "6135c985d54b50033cfd60d9",
+    "pickup": {
+        "latitude": 51.5,
+        "longitude": -1
+    },
+    "departure_date": "2021-01-01T00:00:00.000Z",
+    "passenger": {
+        "name": "user_2",
+        "surname": "surname_2",
+        "phone_number": "123456790"
+    }
+}
