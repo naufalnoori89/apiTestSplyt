@@ -9,8 +9,8 @@ This script is tested using Python 3.8 and above.
 2. Run the main python script "python apiTester.py"
 3. The list of test cases are available in ./template/qaApi.csv
 4. Adjust the key parameters in the csv file to run the intended test cased:
-   a. column 1: testId (mandatory: Please follow the sequence for easy tracking)
-   b. column 2: testName (mandatory: Please follow the sequence for easy tracking)
+   1.1 column 1: testId (mandatory: Please follow the sequence for easy tracking)
+   1.2  column 2: testName (mandatory: Please follow the sequence for easy tracking)
    c. column 3: testDescription (mandatory: Explain in details what is the test case about)
    d. column 4: pickup (mandatory: Insert Y or N ONLY)
    e. column 5: latitude (Optiional)
