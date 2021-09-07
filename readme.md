@@ -23,7 +23,6 @@ This script is tested using Python 3.8 and above.
 
 5. The test results are recorded in ./log directory. The test logs are generated based on the time the test was run.
 
-Any issue please feel free to contact naufalnoori@gmail.com
 
 ## OUTPUT RESULT
 
